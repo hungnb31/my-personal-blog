@@ -1,1 +1,27 @@
+.container
+  // DEFAULT
+  @apply text-defaultColor text-lg py-12 px-8 bg-repeat bg-[url('/images/background.png')]
 
+.main
+  // DEFAULT
+  @apply min-h-screen max-w-screen-xl m-auto
+  // SMALL - START GRID
+  @apply sm:grid sm:grid-cols-4 sm:grid-rows-[repeat(5,_auto)] sm:gap-3
+  // MEDIUM
+
+  // LARGE
+  @apply lg:gap-5 lg:grid-cols-5
+
+.footer
+  display: flex
+  flex: 1
+  padding: 2rem 0
+  border-top: 1px solid #eaeaea
+  justify-content: center
+  align-items: center
+
+.footer a
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-grow: 1

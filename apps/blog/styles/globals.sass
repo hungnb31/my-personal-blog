@@ -1,3 +1,14 @@
 @import "~tailwindcss/base"
 @import "~tailwindcss/components"
 @import "~tailwindcss/utilities"
+
+html
+  @apply font-text box-border
+
+p
+  @apply text-justify
+
+.hashtag
+  @apply flex text-xl font-medium
+  a
+    @apply mr-3 hover:bg-defaultColor hover:text-textWhite px-2 border border-solid border-defaultColor transition-all

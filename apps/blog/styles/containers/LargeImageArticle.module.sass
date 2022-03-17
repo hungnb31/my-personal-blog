@@ -1,0 +1,38 @@
+.container
+  // DEFAULT
+  @apply col-span-full border-t border-solid border-defaultColor cursor-pointer
+  // MEDIUM
+  @apply md:col-[_1/_span_3]
+  // LARGE
+  @apply lg:border-none lg:grid lg:gap-5 lg:grid-cols-3 lg:grid-rows-1
+
+.container:hover .title
+  @apply bg-defaultColor text-textWhite
+
+.container:hover .image
+  @apply filter-none
+
+.title
+  // DEFAULT
+  @apply text-2xl font-head font-bold mt-3 mb-2
+  // LARGE
+  @apply lg:mt-0
+
+.image
+  // DEFAULT
+  @apply grayscale-[95%] transition-all
+  // LARGE
+  @apply lg:col-[_2/_span_2]
+  span
+    @apply h-[92%] #{!important}
+  img
+    @apply min-h-full object-cover
+    @apply border border-solid border-defaultColor transition-all #{!important}
+  figcaption
+    @apply italic text-sm
+
+.content
+  // MEDIUM
+  @apply md:columns-2
+  // LARGE
+  @apply lg:columns-1 lg:col-[_1/_span_1]

@@ -1,0 +1,22 @@
+.container
+  @apply mt-5
+  // SMALL
+  @apply sm:col-span-full sm:columns-2
+  // MEDIUM
+  @apply md:col-[_1/_span_3] md:columns-2 md:mt-3
+  // LARGE
+  @apply lg:col-auto lg:mt-0 lg:columns-1 lg:col-[_4/_span_1] lg:h-mozFill lg:h-webkitFill
+  @apply lg:flex lg:flex-col lg:justify-between
+  article:last-child
+    @apply lg:border-b lg:border-solid lg:border-defaultColor
+.wrapper
+  @apply border-solid border-t border-defaultColor cursor-pointer pb-5
+
+.wrapper:hover .title
+  @apply bg-defaultColor text-textWhite transition-all
+
+.title
+  // DEFAULT
+  @apply text-2xl font-head font-bold mt-3 mb-2
+  // LARGE
+  @apply lg:mb-3
