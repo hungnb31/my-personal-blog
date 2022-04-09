@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
 import styles from '@styles/components/HeadArticle.module.sass';
 import articleImage from '@images/showcase-terrarium.jpeg';
+import Image from './Image';
 
 const HeadArticle = () => {
   return (
@@ -44,16 +44,7 @@ const HeadArticle = () => {
           </p>
         </div>
         <figure className={styles.image}>
-          <Image
-            src={articleImage}
-            width={482}
-            height={389}
-            layout="responsive"
-            alt="article-name"
-          />
-          <figcaption>
-            A to-do list that grows succulents when you&apos;ve completed a task
-          </figcaption>
+          <Image src={articleImage} layout="responsive" alt="article-name" />
         </figure>
       </div>
     </article>
