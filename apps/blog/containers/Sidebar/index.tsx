@@ -1,15 +1,15 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
-import styles from "../../styles/containers/Sidebar.module.sass";
+import styles from '@styles/containers/Sidebar.module.sass';
 
 const categories = [
-  "#React",
-  "#Animation",
-  "#CSS",
-  "#Next",
-  "#Gatsby",
-  "#Performance",
+  '#React',
+  '#Animation',
+  '#CSS',
+  '#Next',
+  '#Gatsby',
+  '#Performance',
 ];
 
 const Sidebar = () => {

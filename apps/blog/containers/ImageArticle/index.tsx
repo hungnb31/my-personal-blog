@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
-import styles from "../../styles/containers/ImageArticle.module.sass";
-import floorplanImg from "../../images/showcase-floorplan.jpg";
+import styles from '@styles/containers/ImageArticle.module.sass';
+import floorplanImg from '@images/showcase-floorplan.jpg';
 
 const ImageArticle = () => {
   return (
@@ -11,7 +11,7 @@ const ImageArticle = () => {
       <Link href="/" passHref>
         <div className={styles.wrapper}>
           <div className={styles.image}>
-            <Image src={floorplanImg} alt="image" />{" "}
+            <Image src={floorplanImg} alt="image" />{' '}
           </div>
           <h4 className={styles.title}>
             Can you get inspired to make your own floor plans?

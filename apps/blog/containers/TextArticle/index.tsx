@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styles from "../../styles/containers/TextArticle.module.sass";
+import styles from '@styles/containers/TextArticle.module.sass';
 
 const TextArticle = () => {
   return (

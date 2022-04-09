@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
-import showcaseGridImg from "../../images/showcase-grid.png";
-import styles from "../../styles/containers/Series.module.sass";
+import showcaseGridImg from '@images/showcase-grid.png';
+import styles from '@styles/containers/Series.module.sass';
 
 const Series = () => {
   return (
