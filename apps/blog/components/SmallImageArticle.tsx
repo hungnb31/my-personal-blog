@@ -1,14 +1,14 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
 
-import toggleImg from "../../../images/showcase-toggle.gif";
-import styles from "../../../styles/containers/SmallImageArticle.module.sass";
+import img from '@images/showcase-toggle.gif';
+import styles from '@styles/components/SmallImageArticle.module.sass';
+import Image from '@components/Image';
 
 const SmallImageArticle = () => {
   return (
     <article className={styles.container}>
       <div className={styles.image}>
-        <Image src={toggleImg} alt="toggle image" />
+        <Image placeholder="empty" src={img} alt="toggle image" />
       </div>
       <div className={styles.content}>
         <h4 className={styles.title}>Toggles</h4>

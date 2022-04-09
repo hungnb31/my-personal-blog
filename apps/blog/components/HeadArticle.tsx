@@ -1,9 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
-import styles from "../../styles/containers/HeadArticle.module.sass";
-import articleImage from "../../images/showcase-terrarium.jpeg";
+import styles from '@styles/components/HeadArticle.module.sass';
+import articleImage from '@images/showcase-terrarium.jpeg';
+import Image from './Image';
 
 const HeadArticle = () => {
   return (
@@ -36,7 +36,7 @@ const HeadArticle = () => {
             it was more efficient.&quot; The biggest issue, she said, is that
             she would hop on Codepen for work, but would get distracted by pens
             made by others in the community for unexpectedly long periods of
-            time, which then causes her to spend even more time on the site.{" "}
+            time, which then causes her to spend even more time on the site.{' '}
             <br />
             &quot;I mean, that&apos;s terrible right?&quot; she asked. Codepen,
             which brands itself as the best place to build, test, and discover
@@ -44,10 +44,7 @@ const HeadArticle = () => {
           </p>
         </div>
         <figure className={styles.image}>
-          <Image src={articleImage} alt="article-name" />
-          <figcaption>
-            A to-do list that grows succulents when you&apos;ve completed a task
-          </figcaption>
+          <Image src={articleImage} layout="responsive" alt="article-name" />
         </figure>
       </div>
     </article>

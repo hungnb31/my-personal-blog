@@ -1,0 +1,32 @@
+.container
+  // DEFAULT
+  @apply col-span-full border-t pt-5 flex flex-col
+  // SMALL
+  @apply sm:flex-row sm:flex-wrap sm:gap-4
+
+.title
+  @apply font-head font-bold text-2xl
+
+.article
+  // DEFAULT (smaller than sm)
+  @apply mt-4
+
+  // SMALL
+  @apply sm:mt-0 sm:flex-[48%]
+
+  // LARGE
+  @apply lg:mt-0 lg:flex-[23%]
+
+.text
+  // MEDIUM
+  @apply md:columns-2
+  // LARGE
+  @apply lg:columns-1
+
+.image
+  // SMALL
+  @apply sm:flex-[48%]
+  // LARGE
+  @apply lg:mt-0 lg:flex-[23%]
+  img
+    @apply grayscale-[95%] border border-solid border-defaultColor #{!important}
