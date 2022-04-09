@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@styles/containers/Header.module.sass';
+import styles from '@styles/components/Header.module.sass';
 
 const Header = () => {
   return (

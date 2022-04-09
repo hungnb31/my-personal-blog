@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-import toggleImg from "../../../images/showcase-toggle.gif";
-import styles from "../../../styles/containers/SmallImageArticle.module.sass";
+import toggleImg from '@images/showcase-toggle.gif';
+import styles from '@styles/components/SmallImageArticle.module.sass';
 
 const SmallImageArticle = () => {
   return (

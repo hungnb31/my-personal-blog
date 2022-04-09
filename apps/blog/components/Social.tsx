@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import hogImg from '@images/showcase-hogwarts.svg';
-import styles from '@styles/containers/Social.module.sass';
+import styles from '@styles/components/Social.module.sass';
 
 const Social = () => {
   return (

@@ -12,9 +12,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "baseUrl": "/",
+    "baseUrl": ".",
     "paths": {
-      "@containers/*": ["./containers/*"],
+      "@components/*": ["components/*"],
       "@images/*": ["./images/*"],
       "@styles/*": ["./styles/*"]
     }

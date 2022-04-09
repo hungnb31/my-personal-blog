@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import styles from '@styles/containers/Sidebar.module.sass';
+import styles from '@styles/components/Sidebar.module.sass';
 
 const categories = [
   '#React',

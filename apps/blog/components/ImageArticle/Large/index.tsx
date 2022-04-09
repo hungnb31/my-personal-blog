@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import styles from '@styles/containers/LargeImageArticle.module.sass';
+import styles from '@styles/components/LargeImageArticle.module.sass';
 import menuImg from '@images/showcase-menu.jpeg';
 
 const LargeImageArticle = () => {

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
-import styles from '@styles/containers/HeadArticle.module.sass';
+import styles from '@styles/components/HeadArticle.module.sass';
 import articleImage from '@images/showcase-terrarium.jpeg';
 
 const HeadArticle = () => {
