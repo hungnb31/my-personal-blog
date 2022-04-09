@@ -11,13 +11,7 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["components/*"],
-      "@images/*": ["./images/*"],
-      "@styles/*": ["./styles/*"]
-    }
+    "incremental": true
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
   "exclude": ["node_modules"]

@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-personal-blog/markdown": ["libs/markdown/src/index.ts"]
+      "@my-personal-blog/markdown": ["libs/markdown/src/index.ts"],
+      "@components/*": ["apps/blog/components/*"],
+      "@images/*": ["apps/blog/images/*"],
+      "@styles/*": ["apps/blog/styles/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
