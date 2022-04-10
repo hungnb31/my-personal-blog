@@ -1,5 +1,7 @@
-import { Youtube } from './youtube/youtube';
+import Youtube from './youtube/youtube';
+import Link from './custom-link/custom-link';
 
 export const mdxElements = {
-  video: Youtube,
+  Youtube,
+  Link,
 };

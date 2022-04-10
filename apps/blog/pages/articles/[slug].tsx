@@ -2,20 +2,22 @@ import { ParsedUrlQuery } from 'querystring';
 import fs from 'fs';
 import { join } from 'path';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { MDXRemote } from 'next-mdx-remote';
 
-import Layout from '@components/Layout';
+import { mdxElements } from '@my-personal-blog/shared/mdx-elements';
+import Layout from '../../components/Layout';
+import styles from '../../styles/components/Article.module.sass';
 import {
   getParsedFileContentBySlug,
   MarkdownRenderingResult,
   renderMarkdown,
 } from '@my-personal-blog/markdown';
-import styles from '@styles/components/Article.module.sass';
 
 export interface ArticleProps extends ParsedUrlQuery {
   slug: string;
 }
 
-const POSTS_PATH = join(process.cwd(), 'apps/blog/_articles');
+const POSTS_PATH = join(process.cwd(), '_articles');
 
 export const getStaticPaths: GetStaticPaths<ArticleProps> = async () => {
   const paths = fs
@@ -61,7 +63,7 @@ export const Article: React.FC<MarkdownRenderingResult> = ({
           <div>by {frontMatter.author}</div>
           <hr />
 
-          <main dangerouslySetInnerHTML={{ __html: html }} />
+          <MDXRemote {...html} components={mdxElements} lazy={true} />
         </article>
       </div>
     </Layout>

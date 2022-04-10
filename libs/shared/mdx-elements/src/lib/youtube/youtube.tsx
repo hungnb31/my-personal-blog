@@ -5,7 +5,7 @@ export interface YoutubeProps {
   uid: string;
 }
 
-export function Youtube(props: YoutubeProps) {
+export default function Youtube(props: YoutubeProps) {
   return (
     <div className={styles['embed']}>
       <iframe
