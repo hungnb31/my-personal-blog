@@ -15,9 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-personal-blog/markdown": ["libs/markdown/src/index.ts"],
       "@components/*": ["apps/blog/components/*"],
       "@images/*": ["apps/blog/images/*"],
+      "@my-personal-blog/markdown": ["libs/markdown/src/index.ts"],
+      "@my-personal-blog/shared/mdx-elements": [
+        "libs/shared/mdx-elements/src/index.ts"
+      ],
       "@styles/*": ["apps/blog/styles/*"]
     }
   },
