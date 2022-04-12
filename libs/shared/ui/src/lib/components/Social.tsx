@@ -1,4 +1,4 @@
-import img from '../images/showcase-hogwarts.svg';
+import img from '../images/showcase-hogwarts.png';
 import { Image } from './Image';
 
 export const Social = () => {
@@ -11,8 +11,7 @@ export const Social = () => {
         <div className="hidden sm:block sm:max-h-40 md:rotate-90 md:h-[250%] md:scale-[200%] md:-ml-5 lg:ml-0">
           <Image
             src={img}
-            width={100}
-            height={100}
+            style={{ border: 'none' }}
             placeholder="empty"
             alt="image"
           />

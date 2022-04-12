@@ -6,7 +6,7 @@ import { Image } from './Image';
 
 export const HeadArticle: React.FC = () => {
   return (
-    <article className="wrapper cursor-pointer col-span-full md:col-[1/_span_3] lg:col-[1/_span_4">
+    <article className="wrapper cursor-pointer col-span-full md:col-[1/_span_3] lg:col-[1/_span_4]">
       <div className="flex text-xl font-medium">
         <Link passHref href="/">
           <a className="hover:bg-defaultColor hover:text-textWhite px-1">
@@ -44,9 +44,14 @@ export const HeadArticle: React.FC = () => {
             front-end code, has declined to comment at this time.
           </p>
         </div>
-        <figure className="wrapper-hover:filter-none">
-          <Image src={articleImage} layout="responsive" alt="article-name" />
-        </figure>
+        <div className="wrapper-hover:filter-none grayscale-[95%] text-justify transition-all w-full">
+          <Image
+            src={articleImage}
+            layout="responsive"
+            objectFit="cover"
+            alt="article-name"
+          />
+        </div>
       </div>
     </article>
   );

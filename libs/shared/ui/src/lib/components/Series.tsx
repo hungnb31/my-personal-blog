@@ -3,8 +3,8 @@ import { Image } from './Image';
 
 export const Series = () => {
   return (
-    <div className="col-span-full borde-t pt-5 flex flex-col sm:flex-row sm:flex-wrap sm:gap-4">
-      <div className="image-wrapper sm:flex-[48%] lg:mt-0 lg:flex-[23%] grayscale-[95%]">
+    <div className="col-span-full border-t pt-5 mt-5 flex flex-col sm:flex-row sm:flex-wrap sm:gap-4">
+      <div className="sm:flex-[48%] lg:mt-0 lg:flex-[23%] grayscale-[95%]">
         <Image alt="something" src={showcaseGridImg} />
       </div>
       <article className="mt-4 sm:mt-0 sm:flex-[48%] lg:mt-0 lg:flex-[23%]">

@@ -4,7 +4,7 @@ import './styles.css';
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className="app">
+      <div className="font-text box-border">
         <main>
           <Component {...pageProps} />
         </main>

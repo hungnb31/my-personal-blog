@@ -1,8 +1,8 @@
 export const TextArticle = () => {
   return (
-    <section className="mt-5 sm:col-span-full sm:columns-2 md:col-[_1/_span_3] md:columns-2 md:mt-3 lg:col-auto lg:mt-0 lg:columns-1 lg:col-[_4/_span_1] lg:h-webkitFill lg:flex lg:flex-col lg:justify-between">
+    <section className="mt-5 sm:col-span-full sm:columns-2 md:col-[_1/_span_3] md:columns-2 md:mt-3 lg:mt-0 lg:columns-1 lg:col-[_4/_span_1] lg:h-webkitFill lg:flex lg:flex-col lg:justify-between">
       <article className="wrapper border-solid border-t border-defaultColor cursor-pointer pb-5">
-        <h4 className="wrapper-hover:bg-defaultColor wrapper-hover:text-textWhite wrapper-hover:transition-all">
+        <h4 className="text-2xl font-head font-bold mt-3 mb-2 lg:mb-3">
           A pasta menu
         </h4>
         <p>
@@ -12,7 +12,7 @@ export const TextArticle = () => {
         </p>
       </article>
       <article className="wrapper border-solid border-t border-defaultColor cursor-pointer pb-5">
-        <h4 className="wrapper-hover:bg-defaultColor wrapper-hover:text-textWhite wrapper-hover:transition-all">
+        <h4 className="text-2xl font-head font-bold mt-3 mb-2 lg:mb-3">
           A pasta menu
         </h4>
         <p>

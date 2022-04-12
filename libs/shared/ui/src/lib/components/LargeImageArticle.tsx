@@ -3,7 +3,7 @@ import { Image } from './Image';
 
 export const LargeImageArticle: React.FC = () => {
   return (
-    <article className="wrapper">
+    <article className="col-span-full border-t border-solid border-defaultColor cursor-pointer md:col-[_1/_span_3] lg:border-none lg:grid lg:gap-5 lg:grid-cols-3 lg:grid-rows-1">
       <div>
         <h4 className="text-2xl font-head font-bold mt-3 mb-2 lg:mt-0">
           Let&apos;s adopt, don&apos;t shop.
@@ -17,7 +17,7 @@ export const LargeImageArticle: React.FC = () => {
           five) color themes, including the precious dark mode.
         </p>
       </div>
-      <figure className="wrapper-hover:filter-none grayscale-[95%] transition-all lg:col-[_2/_span_2] image-wrapper">
+      <figure className="wrapper-hover:filter-none grayscale-[95%] transition-all lg:col-[_2/_span_2]">
         <Image src={menuImg} objectFit="cover" alt="menu image" />
       </figure>
     </article>

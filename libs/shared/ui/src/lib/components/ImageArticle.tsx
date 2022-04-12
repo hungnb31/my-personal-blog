@@ -8,7 +8,7 @@ export const ImageArticle = () => {
     <article className="mt-3 col-span-full border-t pt-3 sm:col-[_1/_span_4] sm:mt-0 sm:border-0 sm:pt-0 md:col-[_1/_span_2] lg:col-[_1/_span_2] lg:border-b lg:border-solid lg:border-defaultColor">
       <Link href="/" passHref>
         <div className="wrapper cursor-pointer lg:pb-2">
-          <div className="grayscale-[95%] transition-all image-wrapper wrapper-hover:filter-none">
+          <div className="grayscale-[95%] transition-all wrapper-hover:filter-none">
             <Image src={floorplanImg} alt="image" />{' '}
           </div>
           <h4 className="wrapper-hover:bg-defaultColor wrapper-hover:text-textWhite wrapper-hover:transition-all">
