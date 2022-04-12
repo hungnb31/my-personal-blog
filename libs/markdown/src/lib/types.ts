@@ -1,4 +1,5 @@
 import { MDXRemoteSerializeResult } from 'next-mdx-remote';
+
 export interface FrontMatter {
   [prop: string]: string;
 }

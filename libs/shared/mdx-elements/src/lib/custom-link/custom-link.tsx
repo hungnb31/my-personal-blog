@@ -1,16 +1,17 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-import { default as NextLink } from 'next/link';
-// import styles from './custom-link.module.sass';
+import Link from 'next/link';
+import './custom-link.module.css';
 
-export interface LinkProps {
+export interface CustomLinkProps {
   as: string;
   href: string;
 }
 
-export default function Link({ as, href, ...otherProps }: LinkProps) {
+export function CustomLink({ as, href, ...otherProps }: CustomLinkProps) {
   return (
-    <NextLink as={as} href={href}>
+    <Link as={as} href={href}>
       <a {...otherProps} />
-    </NextLink>
+    </Link>
   );
 }
+
+export default CustomLink;

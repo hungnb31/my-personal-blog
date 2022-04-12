@@ -1,13 +1,14 @@
-import styles from './youtube.module.sass';
+// libs/shared/mdx-elements/src/lib/youtube/youtube.tsx
+import './youtube.module.css';
 
 export interface YoutubeProps {
   title: string;
   uid: string;
 }
 
-export default function Youtube(props: YoutubeProps) {
+export function Youtube(props: YoutubeProps) {
   return (
-    <div className={styles['embed']}>
+    <div className="youtube-embed">
       <iframe
         src={`https://www.youtube.com/embed/${props.uid}`}
         width="100%"
@@ -17,3 +18,5 @@ export default function Youtube(props: YoutubeProps) {
     </div>
   );
 }
+
+export default Youtube;

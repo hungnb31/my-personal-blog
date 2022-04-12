@@ -1,1 +1,1 @@
-export * from './lib/mdx-element';
+export * from './lib/mdx-elements';

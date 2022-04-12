@@ -15,13 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["apps/blog/components/*"],
-      "@images/*": ["apps/blog/images/*"],
-      "@my-personal-blog/markdown": ["libs/markdown/src/index.ts"],
-      "@my-personal-blog/shared/mdx-elements": [
+      "@howarddev/markdown": ["libs/markdown/src/index.ts"],
+      "@howarddev/reactui": ["libs/reactui/src/index.ts"],
+      "@howarddev/shared/mdx-elements": [
         "libs/shared/mdx-elements/src/index.ts"
       ],
-      "@styles/*": ["apps/blog/styles/*"]
+      "@howarddev/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
